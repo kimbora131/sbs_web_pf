@@ -134,7 +134,7 @@ section.visual .slick-active .img .mask.d {animation-name: mask; animation-durat
 
 @keyframes slid-up {
     0%{opacity: 0;}
-   40%{opacity: 0; transform: translateY(40px);}
+   40%{opacity: 0; transform: translateY(100px);}
 }
 
 
@@ -273,27 +273,179 @@ section.premium .banner li img {width: 100%;}
 section.premium .banner li:nth-child(1).motion {left: 45%; top: 15%; animation-name: slid-up; animation-duration:1.2s ;}
 section.premium .banner li:nth-child(2).motion {left: 37%; top: 50%; animation-name: slid-up; animation-duration:1.8s ;}
 section.premium .banner li:nth-child(3).motion {left: 55%; top: 62%; animation-name: slid-up; animation-duration:2.2s ;}
-section.premium .banner li:nth-child(4).motion {right: 2%; top: 32%; max-width:580px; animation-name: slid-up; animation-duration:1.55s ;}
+section.premium .banner li:nth-child(4).motion {right: 2%; width: 32%; max-width:580px; animation-name: slid-up; animation-duration:1.5s ;}
 
 
 /* section.global */
-section.global {}
-section.global::before {}
-section.global .title h2 {}
-section.global .title p {}
-section.global ul {}
-section.global ul li {}
+section.global { width: 95%; margin: 40px auto; padding: 40px 0; text-align: center; position: relative;} 
+    /* 배경박스 */
+section.global::before { content:''; width: 100%; height: 45%; background-color: #eee; position: absolute; left: 0; bottom: 0; z-index: -1; }
+section.global .title h2 { font-size: 30px; margin-bottom: 20px; }
+section.global .title p {font-size: 18px; line-height: 1.4; margin-bottom: 50px; }
+
+section.global ul { overflow: hidden; padding-top: 50px; }
+section.global ul li {float: left; width: 25%; padding: 15px; box-sizing: border-box;}
 section.global ul li:nth-child(1),
-section.global ul li:nth-child(3) {}
-section.global ul li a {}
-section.global ul li a .img {}
-section.global ul li a .img img {}
-section.global ul li a .img::after {}
-section.global ul li a:hover .img, section.global ul li a:focus .img {}
-section.global ul li a:hover .img::after, section.global ul li a:focus .img::after {}
-section.global ul li a h3 {}
-section.global ul li a h3 span {}
-section.global ul li a p {}
+section.global ul li:nth-child(3) {margin-top: -50px; }
+section.global ul li a {display: block;}
+section.global ul li a .img { box-shadow: 6px 6px 10px rgba(0,0,0,0.25); position: relative; transition: all 0.5s;}
+section.global ul li a .img img {width: 100%;}
+section.global ul li a .img::after {
+    content:'VIEW';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44,35,28,0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+    color:#d4d4d4;
+    padding-top: 200px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition:  all 0.2s;
+}
+section.global ul li a:hover .img, section.global ul li a:focus .img {
+    transform: translate(-8px, -8px);
+    box-shadow: 12px 12px 10px rgba(0,0,0,0.35);
+}
+section.global ul li a:hover .img::after, section.global ul li a:focus .img::after { opacity: 1; }
+section.global ul li a h3 {font-size: 23px; font-weight: 600;margin-top: 25px;}
+section.global ul li a h3 span {color: #999; font-size: 20px; font-weight: 500; display: block;}
+section.global ul li a p {margin-top: 15px; font-size: 18px;}
+
+
+/* animation */
+section.global.motion ul li { animation-name: slid-up; animation-duration: 1s;}
+section.global.motion ul li:nth-child(2) { animation-name: slid-up; animation-duration: 1.4s;}
+section.global.motion ul li:nth-child(3) { animation-name: slid-up; animation-duration: 1.7s;}
+section.global.motion ul li:nth-child(4) { animation-name: slid-up; animation-duration: 2s;}
+
+
+
+/* footer */
+footer { padding: 80px 0 0; text-align: center;}
+footer .sns li { display: inline-block; margin-right: 20px;}
+footer .footerLogo { margin: 40px 0 20px; font-size: 40px; font-weight: 900; letter-spacing: -6px; color:#39312b;}
+footer ul li { font-size: 17px; line-height: 1.4;}
+footer ul li .copyright { font-size: 15px; font-weight: 100; color: #888; display: block; margin-top: 20px;}
+footer .box {
+    background: url(../img/bottom_bg.jpg) no-repeat center/cover;
+    padding: 150px 0;
+    margin-top: 50px;
+}
+footer .box.motion h2 { font-size: 22px; font-weight: normal; color: #fff;
+animation-name:slid-up; animation-duration: 1s;}
+
+
+
+
+/* 모바일 햄버거 메뉴/취소 */
+header .open {display: none;}
+header .close {display: none;}
+
+/* 모바일용 줄바꿈 */
+br.mo {display: none;}
+
+
+
+
+/* ***************반응형 시작 */
+/* *******************************************태블릿 1100px~951px */
+@media screen and (max-width: 1100px){
+    .wrap{min-width: 100%}
+
+    /* header */
+    header {height: 60px; line-height: 60px; padding: 0 10px;}
+    /* 오픈=햄버거 */
+    header .opne { display: block; float: right; font-size: 32px; height: 60px; padding-top: 5px; box-sizing: border-box;}
+    header .bg { width: 100px; height: 100vh; background-color: rgba(0,0,0,0.6); display: block; position: absolute; top: 0; left: 0; z-index: 200; display: none; }
+    header .logo {}
+    header nav {}
+    header nav.on {}
+    header nav .close {}
+    header nav .gnb {margin-top: 100px;}
+    header nav .gnb li {}
+    header nav .gnb li a {}
+    header nav .gnb li a:after { display: none;}
+
+    /* visual */
+    section.visual {}
+    section.visual .img img {}
+    section.visual .title {}
+    section.visual .menu {}
+    section.visual .menu li {}
+    section.visual .menu li a p {}
+    .slick-dots {}
+
+    /* about */
+    section.about {}
+    section.about img {}
+    section.about .inner .line {}
+    section.about .inner ul {}
+    section.about .inner ul li {}
+    section.about .inner ul li:nth-child(3) {}
+
+    /* poremium */
+    section.premium {}
+    section.premium .title {}
+    section.premium .txtImg {}
+
+    /* global */
+    section.global {}
+    section.global ul li a p {}
+    section.global ul li a .img::after {}
+
+
+    /* ************************************************950px 이하 */
+@media screen and (max-width: 950px){
+    .wrap{min-width: 100%}
+
+    /* header */
+
+    /* visual */
+
+    /* about */
+
+    /* poremium */
+
+    /* global */
+
+
+
+        /* ************************************************750px 이하 */
+@media screen and (max-width: 750px){
+    .wrap{min-width: 100%}
+
+    /* header */
+
+    /* visual */
+
+    /* about */
+
+    /* poremium */
+
+    /* global */
+
+
+
+
+
+    /* ************************************************320px 이하 */
+    @media screen and (max-width: 320px){
+        .wrap{min-width: 100%}
+    
+        /* header */
+    
+        /* visual */
+    
+        /* about */
+    
+        /* poremium */
+    
+        /* global */
+}
+
 
 
 

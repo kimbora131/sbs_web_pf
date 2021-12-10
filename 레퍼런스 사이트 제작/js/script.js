@@ -10,7 +10,7 @@ $(function(){
         arrows:false,               //화살표 사용여부
         dots:true,                  //네비게이션 사용여부    
         autoplay:true,              //자동재생
-        fade:false,                  //페이드인 효과
+        fade:true,                  //페이드인 효과
         autoplaySpeed:5000,         //재생시간 5000ms = 5초
         pauseOnHover:false,         //마우스 오버 시 멈춤 여부
         pauseOnFocus:false          //포커스시 멈춤 여부
