@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.josunhotel.com	TRUE	/	FALSE	1999999999	WMONID	-7ccuS8bRgV
+josunhotel.com	TRUE	/	FALSE	1999999999	JOJSESSIONID	B9DAF1776859DF9FBB557044CA8C5066.hotelhome1
+www.josunhotel.com	TRUE	/	FALSE	1999999999	SameSite	None
+

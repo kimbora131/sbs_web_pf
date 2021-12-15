@@ -1,0 +1,42 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 15 Dec 2021 16:17:42 at https://www.josunhotel.com/intro.do +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.josunhotel.com/intro.do -O1 "C:\Users\na__l\Desktop\web_pf\sbs_web_pf\조선호텔 모작\josun" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+Information, Warnings and Errors reported for this mirror:
+note: the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+ such as username/password authentication for websites mirrored in this project
+ do not share these files/folders if you want these information to remain private
+16:17:46 Warning:  can not create directory to C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/connect.facebook.net/en_US/fbevents.js.z
+16:18:28 Error:  "Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://www.josunhotel.com/intro.do)
+16:18:28 Error:  "Error when decompressing" (-1) at link https://connect.facebook.net/en_US/fbevents.js (from https://www.josunhotel.com/intro.do)
+16:18:30 Warning:  can not create directory to C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/openapi.map.naver.com/openapi/v3/maps7491.js.z
+16:18:30 Error:  Unable to save file C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/openapi.map.naver.com/openapi/v3/maps7491.js: No error
+16:18:30 Warning:  file not stored in cache due to bogus state (broken size, expected 86695 got 0): https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=171r5f72de
+16:19:16 Warning:  can not create directory to C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js.z
+16:19:16 Error:  Unable to save file C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js: No error
+16:19:16 Warning:  file not stored in cache due to bogus state (broken size, expected 10960 got 0): https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js
+16:19:25 Warning:  can not create directory to C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/developers.kakao.com/sdk/js/kakao.js.z
+16:19:25 Error:  Unable to save file C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/developers.kakao.com/sdk/js/kakao.js: No error
+16:19:57 Warning:  Retry after error -4 (Incorrect length (0 Bytes, 86695 expected)) at link https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=171r5f72de (from https://www.josunhotel.com/about/location.do)
+16:19:57 Warning:  can not create directory to C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/openapi.map.naver.com/openapi/v3/maps7491.js.z
+16:19:57 Error:  Unable to save file C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/openapi.map.naver.com/openapi/v3/maps7491.js: No error
+16:19:57 Warning:  file not stored in cache due to bogus state (broken size, expected 86695 got 0): https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=171r5f72de
+16:20:00 Error:  "404" (404) at link https://www.josunhotel.com/login/main.do (from https://www.josunhotel.com/login/loginForm.do?nextURL=https://www.josunhotel.com/mypage/main.do)
+16:20:00 Warning:  Retry after error -4 (Incorrect length (0 Bytes, 10960 expected)) at link https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js (from https://www.josunhotel.com/product/janePacker.do)
+16:20:00 Error:  "Not Found" (404) at link https://www.josunhotel.com/resve/dining/url (from https://www.josunhotel.com/resve/dining/resveForm.do)
+16:20:00 Warning:  can not create directory to C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js.z
+16:20:00 Error:  Unable to save file C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js: No error
+16:20:00 Warning:  file not stored in cache due to bogus state (broken size, expected 10960 got 0): https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js
+16:20:09 Error:  "Not Found" (404) at link https://www.josunhotel.com/static/home/font/notokr-light.ttf (from https://www.josunhotel.com/static/home/css/ko/pc/common_new.css)
+16:20:09 Error:  "Not Found" (404) at link https://www.josunhotel.com/static/home/font/notokr-regular.ttf (from https://www.josunhotel.com/static/home/css/ko/pc/common_new.css)
+16:20:09 Error:  "Not Found" (404) at link https://www.josunhotel.com/static/home/font/notokr-medium.ttf (from https://www.josunhotel.com/static/home/css/ko/pc/common_new.css)
+16:20:09 Warning:  Retry after error -4 (Incorrect length (0 Bytes, 86695 expected)) at link https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=171r5f72de (from https://www.josunhotel.com/about/location.do)
+16:20:09 Warning:  can not create directory to C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/openapi.map.naver.com/openapi/v3/maps7491.js.z
+16:20:09 Error:  Unable to save file C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/openapi.map.naver.com/openapi/v3/maps7491.js: No error
+16:20:09 Warning:  file not stored in cache due to bogus state (broken size, expected 86695 got 0): https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=171r5f72de
+16:20:12 Warning:  Retry after error -4 (Incorrect length (0 Bytes, 10960 expected)) at link https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js (from https://www.josunhotel.com/product/janePacker.do)
+16:20:12 Error:  "Incorrect length (0 Bytes, 86695 expected)" (-4) after 2 retries at link https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=171r5f72de (from https://www.josunhotel.com/about/location.do)
+16:20:13 Warning:  can not create directory to C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js.z
+16:20:13 Error:  Unable to save file C:/Users/na__l/Desktop/web_pf/sbs_web_pf/조선호텔 모작/josun/t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js: No error
+16:20:13 Warning:  file not stored in cache due to bogus state (broken size, expected 10960 got 0): https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js
+16:20:13 Error:  "Incorrect length (0 Bytes, 10960 expected)" (-4) after 2 retries at link https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js (from https://www.josunhotel.com/product/janePacker.do)
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 31 seconds : 526 links scanned, 512 files written (68801843 bytes overall) [69124333 bytes received at 457777 bytes/sec], 25965 bytes transferred using HTTP compression in 1 files, ratio 100%, 31.8 requests per connection
+(16 errors, 18 warnings, 0 messages)
