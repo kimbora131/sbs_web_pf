@@ -1,74 +1,92 @@
 body {margin: 0;padding: 0;}
-a {text-decoration: inherit; color: inherit; margin: 0; padding: 0;}
-li{ list-style: none; margin: 0; padding: 0;}
+a, li, ul, img, div {text-decoration: inherit; color: inherit; margin: 0; padding: 0; list-style: none;}
 
-header {
-    position: fixed;
-    margin: 0 auto;
-    width: 98%;
+
+header{
+    /* background-color: rgb(127, 127, 155); */
+    width: 100%;
     height: 100px;
-    display: flex;
-    justify-content: space-between;
-    background-color: bisque;
+    position: fixed;
+}
+header .inner{
+    width: 95%;
+    padding: 0 40px;
     position: relative;
+    height: 100%;
 }
-header .hRight {
-    width: 25%;
-    background-color: aquamarine;    
-    font-size: 15px;
-    padding-top: 30px; 
-    font-size: 14px;
-    letter-spacing: -1.5px; 
-}
-header .hRight div {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-header .hRight .open {
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-}
-header .hRight .open img {
-}
-header .hRight .search {}
-header .hRight .lang a:nth-child(2) {display: none;}
-header .hRight .lang a:nth-child(1)::before {
-    display: inline-block;
-    background: url(../img/common/ico_lang_white.png) no-repeat;}
-
-header .logo {
+header .inner .hRight {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
+    top: 30px;
+    letter-spacing: -1px;
+    font-size: 15px;
 }
-
-header .hLeft {
-    background-color: cadetblue;
-    width: 35%;
-    display: flex;
-    justify-content: space-around;
-    font-size: 14px;
-    letter-spacing: -1.5px;
-}
-header .hLeft .menu{
-    padding-top: 25px;
-}
-header .hLeft .menu li{
-    padding: 5px;
-    margin-left: 10px;
+header .inner .hRight div {
     display: inline-block;
+    margin-right: 30px;
 }
+header .inner .hRight .open{width: 30px;height: 30px;overflow: hidden;}
+header .inner .hRight .open img{}
+header .inner .hRight .search{
+    transform: translateY(-6px);
+}
+header .inner .hRight .lang{
+    transform: translateY(-6px);
+}
+header .inner .hRight .lang a{}
+header .inner .hRight .lang a .ko{}
+header .inner .hRight .lang a .en{}
+header .inner .logo{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .inner .logo a{
+    font-family: 'HeirofLightBold', sans-serif;
+    font-size: 25px;
+}
+header .inner .hLeft{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    display: flex;
+    letter-spacing: -1px;
+    font-size: 15px;
+}
+header .inner .hLeft .menu{
+    margin-right: 30px;
+}
+header .inner .hLeft .menu li{
+    display: inline-block;
+    margin-left: 30px;
+}
+header .inner .hLeft .menu .login{}
+header .inner .hLeft .menu .join{}
+header .inner .hLeft .menu .reservationCheck{}
+header .inner .hLeft .reList{
+    border: 1px solid black;
+    padding: 10px 22px;
+    font-family: 'gothamL', sans-serif;
+    font-weight: 900;
+}
+header .inner .hLeft .reList li{
+    display: none;
+}
+header .inner .hLeft .reList .reList a:hover li{ display: block;}
+header .inner .hLeft .reList .reList2{}
+header .inner .hLeft .reList .reList3{}
+header .inner .hLeft .reList .reList4{}
 
-header .hLeft button {
-    margin-top: 30px;
-    margin-left: 20px;
-    line-height: 3;
-    height: 45px;
-    width: 150px;
+
+@font-face {
+    font-family: 'gothamL';
+    src:url('../font/gotham-light.woff') format('woff');
+    /* 이런식으로 weight를 지정해서 사용할 수도 있다!*/
+    font-weight: 400;
 }
-header .hLeft button .reList {}
-header .hLeft button .reList li {display: none;}
+@font-face {
+    font-family: 'HeirofLightBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
