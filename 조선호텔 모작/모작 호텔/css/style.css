@@ -6,9 +6,12 @@ header{
     /* background-color: rgb(127, 127, 155); */
     z-index: 1000;
     width: 100%;
-    height: 100px;
+    height: 90px;
     position: fixed;
 }
+
+
+
 header .inner{
     width: 95%;
     padding: 0 40px;
@@ -18,8 +21,10 @@ header .inner{
 header .inner .hRight {
     position: absolute;
     top: 30px;
-    letter-spacing: -1px;
-    font-size: 13px;
+    font-size: 13.5px;
+    color:#fff;
+    
+    /* font-family: 'notosansKR', sans-serif; */
 }
 header .inner .hRight div {
     display: inline-block;
@@ -28,6 +33,7 @@ header .inner .hRight div {
 header .inner .hRight .open{
     width: 30px;
     height: 30px;
+    left: 10px;
     overflow: hidden;
     position: relative;
 }
@@ -36,9 +42,12 @@ header .inner .hRight .open img{
     left: 0;
 }
 header .inner .hRight .search{
+    margin-left: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
     transform: translateY(-6px);
 }
 header .inner .hRight .lang{
+    font-family: 'gothamL', sans-serif;
     transform: translateY(-6px);
 }
 header .inner .hRight .lang a{}
@@ -52,18 +61,24 @@ header .inner .logo{
 }
 header .inner .logo a{
     font-family: 'HeirofLightBold', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+header .inner .logo a span {
+    font-size: 17px;
 }
 header .inner .hLeft{
     position: absolute;
     top: 30px;
-    right: 0px;
+    right: 10px;
     display: flex;
     letter-spacing: -1px;
     font-size: 13px;
+    color: #fff;
 }
 header .inner .hLeft .menu{
     margin-right: 30px;
+    margin-top: 1px;
 }
 header .inner .hLeft .menu > li{
     display: inline-block;
@@ -73,7 +88,8 @@ header .inner .hLeft .menu .login{}
 header .inner .hLeft .menu .join{}
 header .inner .hLeft .menu .reservationCheck{}
 header .inner .hLeft .menu .reList{
-    border: 1px solid black;
+    
+    border: 1px solid #fff;
     padding: 10px 22px;
     font-family: 'gothamL', sans-serif;
     font-weight: 900;
@@ -83,17 +99,28 @@ header .inner .hLeft .menu .reList ul{
     position: absolute;
     top: 100%;
     left: -1px;
-    border: 1px solid black;
+    border: 1px solid #fff;
     background-color: #fff;
     text-align: center;
+    display: none;
 }
 
 header .inner .hLeft .menu .reList ul li{
     padding: 10px 24.5px;
     display: block;
+    color: black;
 }
 
 .section1 {background-color: rgb(75, 72, 64);}
+
+header a {color: #fff;}
+header .reList a {color: #000;}
+header .reList > a {color: #fff;}
+
+header.on a { color: black;}
+header.on .reList a {color: black;}
+header.on .reList > a {color: #000;}
+
 
 @font-face {
     font-family: 'gothamL';
@@ -106,4 +133,27 @@ header .inner .hLeft .menu .reList ul li{
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+#section0 {
+    background-image: url(../img/bg_main01.jpg);
+}
+#section1 {
+    
+}
+#section2 {
+    background-image: url(../img/bg_main02.jpg);
+}
+#section3 .slide:nth-child(1){
+    background-image: url(../img/bg_main01_01.jpg);
+}
+#section3 .slide:nth-child(2) {
+    background-image: url(../img/bg_main01_02.jpg);
+}
+#section4 {
+    background-image: url(../img/bg_main03_02.jpg);
+}
+#section5 {
+    background-image: url(../img/bg_main06.jpg);
 }
