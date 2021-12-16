@@ -56,26 +56,30 @@ header .inner .hLeft{
 header .inner .hLeft .menu{
     margin-right: 30px;
 }
-header .inner .hLeft .menu li{
+header .inner .hLeft .menu > li{
     display: inline-block;
     margin-left: 30px;
 }
 header .inner .hLeft .menu .login{}
 header .inner .hLeft .menu .join{}
 header .inner .hLeft .menu .reservationCheck{}
-header .inner .hLeft .reList{
+header .inner .hLeft .menu .reList{
     border: 1px solid black;
     padding: 10px 22px;
     font-family: 'gothamL', sans-serif;
     font-weight: 900;
+    position: relative;
 }
-header .inner .hLeft .reList li{
-    display: none;
+header .inner .hLeft .menu .reList ul{
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+
 }
-header .inner .hLeft .reList .reList a:hover li{ display: block;}
-header .inner .hLeft .reList .reList2{}
-header .inner .hLeft .reList .reList3{}
-header .inner .hLeft .reList .reList4{}
+header .inner .hLeft .menu .reList ul li{
+    display: block;
+    margin: 20px 0;
+}
 
 
 @font-face {
