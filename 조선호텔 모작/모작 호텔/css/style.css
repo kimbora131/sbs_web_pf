@@ -39,6 +39,7 @@ header .inner .hRight .open{
 }
 header .inner .hRight .open img{
     position: absolute;
+    transition: all 0.3s linear;
     left: 0;
 }
 header .inner .hRight .search{
@@ -88,11 +89,11 @@ header .inner .hLeft .menu .login{}
 header .inner .hLeft .menu .join{}
 header .inner .hLeft .menu .reservationCheck{}
 header .inner .hLeft .menu .reList{
-    
+    letter-spacing: 0.5px;
     border: 1px solid #fff;
-    padding: 10px 22px;
+    padding: 13px 17px;
     font-family: 'gothamL', sans-serif;
-    font-weight: 900;
+    font-weight: bold;
     position: relative;
 }
 header .inner .hLeft .menu .reList ul{
@@ -106,7 +107,7 @@ header .inner .hLeft .menu .reList ul{
 }
 
 header .inner .hLeft .menu .reList ul li{
-    padding: 10px 24.5px;
+    padding: 10px 20px;
     display: block;
     color: black;
 }
@@ -117,9 +118,233 @@ header a {color: #fff;}
 header .reList a {color: #000;}
 header .reList > a {color: #fff;}
 
+header.on {background-color: #fff;}
 header.on a { color: black;}
 header.on .reList a {color: black;}
 header.on .reList > a {color: #000;}
+header.on .inner .hLeft .menu .reList {border: 1px solid #000;}
+header.on .inner .hLeft .menu .reList ul{border: 1px solid #000;}
+header.on .inner .hRight .open img{
+    transform: translateX(-50%);
+    transition: all 0.3s linear;
+}
+
+
+
+
+
+
+
+
+
+#fullpage .section {
+    width: 100%;
+    height: 100%;
+}
+/* **************************** #section0 첫번째 슬라이드 ****************************** */
+#section0 {
+    background: url(../img/bg_main01.jpg);
+    background-size: cover;
+    position: relative;
+}
+#section0 h1 {
+    font-size: 50px;
+    text-align: center;
+    transform: translateY(-40%);
+    font-family: 'Nanum Myeongjo', serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+#section0 h1 span{
+    font-size: 60px;
+    font-weight: 300;}
+
+#section0 .promotion {
+    position: absolute;
+
+}
+
+#section0 .chkInout {
+    /* background-color: aquamarine; */
+    z-index: 900;
+    position: relative;
+    position: absolute;
+    width: 1400px;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+#section0 .chkInout .promotion {
+    position: absolute;
+    top: 0;
+    margin: 0; padding: 0;
+    width: 100%;
+    height: 45%;
+    position: relative;
+}
+#section0 .chkInout .promotion button {
+    position: absolute;
+    height: 100%;
+    width: 150px;
+    font-size: 15px;
+    text-align: right;
+    border: 0px none rgb(255,255,255,0);
+    background-color: rgb(255,255,255,0);
+    color: #fff;
+    right: 0;
+}
+#section0 .chkInout .promotion button span {
+    font-size: 24px;
+}
+
+
+
+#section0 .chkInout .select {
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    bottom: 0;
+}
+
+
+
+#section0 .chkInout .select .selection {
+    display: inline-block;
+
+    position: absolute;
+    border-right: 1px solid rgba(180,180,180,0.5);
+    height: 100%;
+}
+#section0 .chkInout .select .selection .buttonS {
+    position: relative;
+    position: absolute;
+    height: 100%;
+    font-family: 'gothamM', 'NotoSansKR', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: -1.5px;
+    background-color: rgb(255,255,255,0);
+    border: 0px none #fff;
+    text-align: left;
+    color:#fff;
+    padding-top: 30px;
+    padding-left: 30px;
+    letter-spacing: -1px;
+}
+#section0 .chkInout .select .selection .buttonS p {
+    position: absolute;
+    text-align-last: left;
+    top: -5px;
+    font-family: 'gothamM', sans-serif;
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+
+
+#section0 .chkInout .select .reservation2 {
+    width: 15%;
+}
+#section0 .chkInout .select .reservation2 .buttonS div{
+    position: absolute;
+    top: 60%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-left: 70px;
+    transform: rotate(45deg);
+}
+#section0 .chkInout .select .hotel {
+    left: 15%;
+    width: 25%;
+}
+#section0 .chkInout .select .check {
+    left: 40%;
+    width: 28%;  
+}
+#section0 .chkInout .select .roompnpeople {
+    left: 68%;
+    width: 20%;
+    border-right: 1px solid rgba(180,180,180,0.0);
+}
+#section0 .chkInout .select .roompnpeople .buttonS .roomtype span{
+    padding: 0 10px;
+}
+#section0 .chkInout .select .roompnpeople .buttonS .pptype span{
+    padding: 0 20px;
+    margin: 0 10px;
+}
+#section0 .chkInout .select .search{
+    position: absolute;
+    right: 0;
+    width: 12%;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'gothamM', sans-serif;
+    color: #fff;
+    background-color: rgba(180,180,180,0.0);
+    border: 2px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* **************************** #section1 두번째 슬라이드 ****************************** */
+
+#section1 {
+    background-color: #fff;
+    
+}   
+#section2 {
+    background: url(../img/bg_main02.jpg);
+    background-size: cover;
+}
+#section3 .slide:nth-child(1){
+    background: url(../img/bg_main01_01.jpg);
+    background-size: cover;
+}
+#section3 .slide:nth-child(2) {
+    background: url(../img/bg_main01_02.jpg);
+    background-size: cover;
+}
+#section4 {
+    width: 100vh;
+    height: 100vh;
+    background-size: cover;
+}
+#section5 {
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @font-face {
@@ -129,6 +354,12 @@ header.on .reList > a {color: #000;}
     font-weight: 400;
 }
 @font-face {
+    font-family: 'gothamM';
+    src:url('../font/gotham-medium.woff') format('woff');
+    /* 이런식으로 weight를 지정해서 사용할 수도 있다!*/
+    font-weight: 800;
+}
+@font-face {
     font-family: 'HeirofLightBold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
     font-weight: normal;
@@ -136,24 +367,6 @@ header.on .reList > a {color: #000;}
 }
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
-#section0 {
-    background-image: url(../img/bg_main01.jpg);
-}
-#section1 {
-    
-}
-#section2 {
-    background-image: url(../img/bg_main02.jpg);
-}
-#section3 .slide:nth-child(1){
-    background-image: url(../img/bg_main01_01.jpg);
-}
-#section3 .slide:nth-child(2) {
-    background-image: url(../img/bg_main01_02.jpg);
-}
-#section4 {
-    background-image: url(../img/bg_main03_02.jpg);
-}
-#section5 {
-    background-image: url(../img/bg_main06.jpg);
-}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');

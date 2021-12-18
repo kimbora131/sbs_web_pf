@@ -23,7 +23,7 @@ $(function() {
         const page = $('.section.active').index() + 1
 
         // 2,3,5 페이지 일 때 
-        if( page == 2 || page == 3 || page == 5 ) {
+        if( page == 2 || page == 3 || page == 6 ) {
             $('header').addClass('on')
         } else {
             $('header').removeClass('on')
