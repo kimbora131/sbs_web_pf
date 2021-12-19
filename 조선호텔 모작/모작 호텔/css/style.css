@@ -1,5 +1,5 @@
 body {margin: 0;padding: 0;}
-a, li, ul, img, div {text-decoration: inherit; color: inherit; margin: 0; padding: 0; list-style: none;}
+a, li, ul, img, div, p, span, button,h1,h2,h3,h4,h5,h6 {text-decoration: inherit; color: inherit; margin: 0; padding: 0; list-style: none;}
 
 
 header{
@@ -61,7 +61,8 @@ header .inner .logo{
     transform: translateX(-50%);
 }
 header .inner .logo a{
-    font-family: 'HeirofLightBold', sans-serif;
+    font-family: 'HeirofLightBold', serif;
+    font-weight: 500;
     font-size: 20px;
     letter-spacing: 4px;
 }
@@ -306,16 +307,333 @@ header.on .inner .hRight .open img{
 
 #section1 {
     background-color: #fff;
+} 
+#section1 .offer{
+    /* background-color: bisque; */
+    width: 1400px;
+    height: 550px;
+    margin: 0 auto;
+}
+#section1 .offer .goto{
+    height: 12%;
+    font-family: 'gothamM', sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin-left: 10%;
+}
+#section1 .offer .goto a{
+    position: absolute;
+    padding-top: 20px;
+}
+#section1 .offer .goto a > div{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-left: 7px;
+    margin-bottom: 1px;
+    transform: rotate(-45deg);
+}
+#section1 .offer .offers{
+    width: 100%;
+    height: 88%;
+    display: flex;
+    position: relative;
+}
+#section1 .offer .offers .postContainer{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+    overflow: hidden;
+}
+#section1 .offer .offers .postContainer .post{
+    font-size: 15px;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    margin-right: 35px;
+    box-sizing: border-box;
+    transform:translateX(0px);
+}
+
+#section1 .offer .offers .postContainer .post > div{
+    margin: 0;
+}
+
+#section1 .offer .offers .postContainer .post .post-img{
+    width: 100%;
+    height: 50%;
+
+}
+#section1 .offer .offers .postContainer .post .post-img img{
+    width: 100%;
+    box-sizing: border-box;
+}
+#section1 .offer .offers .postButton {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 35%;
+    z-index: 1000;
+}
+#section1 .offer .offers .postButton:hover{
+    cursor: pointer;
+}
+#section1 .offer .offers .postButton .arrowL{
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    padding-left: 30px;
+    display: none;
+}
+#section1 .offer .offers .postButton .arrowR{
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    padding-right: 30px;
+}
+#section1 .offer .offers .postButton .arrowR > img{
+    transform:translateX(-50%);
+}
+#section1 .offer .offers .postContainer .post .post-img > div{
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    background-color: rgba(100, 80, 55, 0);
+}
+#section1 .offer .offers .postContainer .post .post-img > div > a{
+    position: absolute;
+    font-size: 17px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    padding: 20px 35px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.0);
+}
+#section1 .offer .offers .postContainer .post .title{
+    font-family: 'Playfair Display', serif;
+    transform:rotate(0.04deg);
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: -1px;
+    height: 20%;
     
-}   
+}
+#section1 .offer .offers .postContainer .post .title span{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+#section1 .offer .offers .postContainer .post .txt{
+    display: block;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    height: 10%;
+}
+#section1 .offer .offers .postContainer .post .txt p {
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#section1 .offer .offers .postContainer .post .date{
+    font-family: 'gothamL', sans-serif;
+    font-size: 16px;
+    height: 10%;
+}
+#section1 .offer .offers .postContainer .post .name{
+    bottom: 20px;
+    padding: 5px 8px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    color:#fff;
+    height: 5%;
+}
+#section1 .offer .offers .postContainer .offerpost1{left: 0;}
+#section1 .offer .offers .postContainer .offerpost2{left: 390px;}
+#section1 .offer .offers .postContainer .offerpost3{left: 780px;}
+#section1 .offer .offers .postContainer .offerpost4{left: 1170px;}
+#section1 .offer .offers .postContainer .offerpost5{left: 1560px;}
+#section1 .offer .offers .postContainer .offerpost6{left: 1950px;}
+#section1 .offer .offers .postContainer .offerpost7{left: 2340px;}
+#section1 .offer .offers .postContainer .offerpost8{left: 2730px;}
+
+#section1 .offer .offers .postContainer .offerpost1 .name{
+    background-color: rgb(98, 107, 110);
+    text-align: center;
+    width: 120px;
+    left: 0;
+}
+#section1 .offer .offers .postContainer .offerpost2 .name{
+    background-color: rgb(126, 123, 119);
+    text-align: center;
+    width: 120px;
+}
+#section1 .offer .offers .postContainer .offerpost3 .name{
+    background-color: rgb(49, 179, 240);
+    text-align: center;
+    width: 260px;
+}
+#section1 .offer .offers .postContainer .offerpost4 .name{
+    background-color: rgb(12, 100, 116);
+    text-align: center;
+    width: 260px;
+}
+#section1 .offer .offers .postContainer .offerpost5 .name{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 120px;
+}
+#section1 .offer .offers .postContainer .offerpost6 .name{
+    background-color: rgb(196, 0, 0);
+    text-align: center;
+    width: 120px;
+}
+#section1 .offer .offers .postContainer .offerpost7 .name{
+    background-color: rgb(75, 75, 75);
+    text-align: center;
+    width: 120px;
+}
+#section1 .offer .offers .postContainer .offerpost8 .name{
+    background-color: rgb(19, 48, 19);
+    text-align: center;
+    width: 120px;
+}
+#section1 .offer .offers .postContainer .post .post-img > div:hover{
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    background-color: rgba(100, 80, 55, 0.5);
+}
+#section1 .offer .offers .postContainer .post .post-img > div:hover a{
+    position: absolute;
+    font-size: 17px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    padding: 20px 35px;
+    border: 1px solid rgba(255, 255, 255,0.8);
+    color: rgba(255, 255, 255,0.8);
+}
+
+
+
+
+
+
+/* ********************************세번째 슬라이드********************************************** */
+
 #section2 {
     background: url(../img/bg_main02.jpg);
     background-size: cover;
+    position: relative;
 }
+#section2 .slideDown{
+    z-index: 900;
+    background-color: #fff;
+    width: 100%;
+    height: 45%;
+    top: 0;
+    position: relative;
+    position: absolute;
+    text-align: center;
+}
+#section2 .slideDown h1{
+    padding-top: 220px;
+    font-size:50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+#section2 .slideDown h1 span {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 55px;
+}
+#section2 .slideDown p{
+    padding-top: 25px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: -0.5px;
+}
+#section2 .slideDown .clubBtn{
+    padding-top: 50px;
+}
+#section2 .slideDown .clubBtn a{
+    background-color: #fff;
+    padding:18px 30px ;
+    margin-left: 30px;
+    font-size: 18px;
+    font-family: 'gothamL', sans-serif;
+    border: 1px solid #000;
+}
+
+
+/* *****************************네번째 스크롤의 슬라이드 1******************************** */
+
 #section3 .slide:nth-child(1){
     background: url(../img/bg_main01_01.jpg);
     background-size: cover;
 }
+#section3 .slide1 .brandBox{
+    background-color: #fff;
+    width: 1180px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+#section3 .slide1 .brandBox .boxtitle{
+    font-size: 65px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    padding-top: 80px;
+}
+#section3 .slide1 .brandBox .subtitle{
+    font-size: 20px;
+    font-family: 'gothamB', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 13px;
+}
+#section3 .slide1 .brandList{
+    
+    width: 85%;
+    height: 300px;
+    background-color: aqua;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+#section3 .slide1 .brandList div{
+    background-color: blueviolet;
+    display: inline-block;
+    width: 190px;
+    height: 150px; 
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+#section3 .slide1 .brandList div a{
+  
+}
+
+
+
+
+
+
+
+
+
 #section3 .slide:nth-child(2) {
     background: url(../img/bg_main01_02.jpg);
     background-size: cover;
@@ -366,7 +684,7 @@ header.on .inner .hRight .open img{
     font-style: normal;
 }
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+

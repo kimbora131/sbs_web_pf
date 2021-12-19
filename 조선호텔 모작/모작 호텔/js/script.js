@@ -2,6 +2,9 @@
 
 $(function() {
 
+
+
+
     // reservation 클릭 이벤트 
     let reListOn = 'off'
     $('.reList').on('click', function(){
@@ -29,8 +32,13 @@ $(function() {
             $('header').removeClass('on')
         }
 
-
     })
 
 
-})
+
+
+//* 섹션3 슬라이드 다운************************************
+
+   
+
+    })
