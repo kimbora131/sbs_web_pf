@@ -1,0 +1,693 @@
+body {margin: 0;padding: 0;}
+a, li, ul, img, div, p, span, button,h1,h2,h3,h4,h5,h6 {text-decoration: inherit; color: inherit; margin: 0; padding: 0; list-style: none;}
+
+
+header{
+    /* background-color: rgb(127, 127, 155); */
+    z-index: 1000;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+}
+
+
+
+header .inner{
+    width: 95%;
+    padding: 0 40px;
+    position: relative;
+    height: 100%;
+}
+header .inner .hRight {
+    position: absolute;
+    top: 30px;
+    font-size: 13.5px;
+    color:#fff;
+    
+    /* font-family: 'notosansKR', sans-serif; */
+}
+header .inner .hRight div {
+    display: inline-block;
+    margin-right: 30px;
+}
+header .inner .hRight .open{
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    overflow: hidden;
+    position: relative;
+}
+header .inner .hRight .open img{
+    position: absolute;
+    transition: all 0.3s linear;
+    left: 0;
+}
+header .inner .hRight .search{
+    margin-left: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    transform: translateY(-6px);
+}
+header .inner .hRight .lang{
+    font-family: 'gothamL', sans-serif;
+    transform: translateY(-6px);
+}
+header .inner .hRight .lang a{}
+header .inner .hRight .lang a .ko{}
+header .inner .hRight .lang a .en{}
+header .inner .logo{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .inner .logo a{
+    font-family: 'HeirofLightBold', serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+header .inner .logo a span {
+    font-size: 17px;
+}
+header .inner .hLeft{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    display: flex;
+    letter-spacing: -1px;
+    font-size: 13px;
+    color: #fff;
+}
+header .inner .hLeft .menu{
+    margin-right: 30px;
+    margin-top: 1px;
+}
+header .inner .hLeft .menu > li{
+    display: inline-block;
+    margin-left: 30px;
+}
+header .inner .hLeft .menu .login{}
+header .inner .hLeft .menu .join{}
+header .inner .hLeft .menu .reservationCheck{}
+header .inner .hLeft .menu .reList{
+    letter-spacing: 0.5px;
+    border: 1px solid #fff;
+    padding: 13px 17px;
+    font-family: 'gothamL', sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+header .inner .hLeft .menu .reList ul{
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    text-align: center;
+    display: none;
+}
+
+header .inner .hLeft .menu .reList ul li{
+    padding: 10px 20px;
+    display: block;
+    color: black;
+}
+
+.section1 {background-color: rgb(75, 72, 64);}
+
+header a {color: #fff;}
+header .reList a {color: #000;}
+header .reList > a {color: #fff;}
+
+header.on {background-color: #fff;}
+header.on a { color: black;}
+header.on .reList a {color: black;}
+header.on .reList > a {color: #000;}
+header.on .inner .hLeft .menu .reList {border: 1px solid #000;}
+header.on .inner .hLeft .menu .reList ul{border: 1px solid #000;}
+header.on .inner .hRight .open img{
+    transform: translateX(-50%);
+    transition: all 0.3s linear;
+}
+
+
+
+
+
+
+
+
+
+#fullpage .section {
+    width: 100%;
+    height: 100%;
+}
+/* **************************** #section0 첫번째 슬라이드 ****************************** */
+#section0 {
+    background: url(../img/bg_main01.jpg);
+    background-size: cover;
+    position: relative;
+}
+#section0 h1 {
+    font-size: 50px;
+    text-align: center;
+    transform: translateY(-40%);
+    font-family: 'Nanum Myeongjo', serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+#section0 h1 span{
+    font-size: 60px;
+    font-weight: 300;}
+
+#section0 .promotion {
+    position: absolute;
+
+}
+
+#section0 .chkInout {
+    /* background-color: aquamarine; */
+    z-index: 900;
+    position: relative;
+    position: absolute;
+    width: 1400px;
+    height: 110px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+#section0 .chkInout .promotion {
+    position: absolute;
+    top: 0;
+    margin: 0; padding: 0;
+    width: 100%;
+    height: 45%;
+    position: relative;
+}
+#section0 .chkInout .promotion button {
+    position: absolute;
+    height: 100%;
+    width: 150px;
+    font-size: 15px;
+    text-align: right;
+    border: 0px none rgb(255,255,255,0);
+    background-color: rgb(255,255,255,0);
+    color: #fff;
+    right: 0;
+}
+#section0 .chkInout .promotion button span {
+    font-size: 24px;
+}
+
+
+
+#section0 .chkInout .select {
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    bottom: 0;
+}
+
+
+
+#section0 .chkInout .select .selection {
+    display: inline-block;
+
+    position: absolute;
+    border-right: 1px solid rgba(180,180,180,0.5);
+    height: 100%;
+}
+#section0 .chkInout .select .selection .buttonS {
+    position: relative;
+    position: absolute;
+    height: 100%;
+    font-family: 'gothamM', 'NotoSansKR', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: -1.5px;
+    background-color: rgb(255,255,255,0);
+    border: 0px none #fff;
+    text-align: left;
+    color:#fff;
+    padding-top: 30px;
+    padding-left: 30px;
+    letter-spacing: -1px;
+}
+#section0 .chkInout .select .selection .buttonS p {
+    position: absolute;
+    text-align-last: left;
+    top: -5px;
+    font-family: 'gothamM', sans-serif;
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+
+
+#section0 .chkInout .select .reservation2 {
+    width: 15%;
+}
+#section0 .chkInout .select .reservation2 .buttonS div{
+    position: absolute;
+    top: 60%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-left: 70px;
+    transform: rotate(45deg);
+}
+#section0 .chkInout .select .hotel {
+    left: 15%;
+    width: 25%;
+}
+#section0 .chkInout .select .check {
+    left: 40%;
+    width: 28%;  
+}
+#section0 .chkInout .select .roompnpeople {
+    left: 68%;
+    width: 20%;
+    border-right: 1px solid rgba(180,180,180,0.0);
+}
+#section0 .chkInout .select .roompnpeople .buttonS .roomtype span{
+    padding: 0 10px;
+}
+#section0 .chkInout .select .roompnpeople .buttonS .pptype span{
+    padding: 0 20px;
+    margin: 0 10px;
+}
+#section0 .chkInout .select .search{
+    position: absolute;
+    right: 0;
+    width: 12%;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'gothamM', sans-serif;
+    color: #fff;
+    background-color: rgba(180,180,180,0.0);
+    border: 2px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* **************************** #section1 두번째 슬라이드 ****************************** */
+
+#section1 {
+    background-color: #fff;
+} 
+#section1 .offer{
+    /* background-color: bisque; */
+    width: 1400px;
+    height: 550px;
+    margin: 0 auto;
+}
+#section1 .offer .goto{
+    height: 12%;
+    font-family: 'gothamM', sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin-left: 10%;
+}
+#section1 .offer .goto a{
+    position: absolute;
+    padding-top: 20px;
+}
+#section1 .offer .goto a > div{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-left: 7px;
+    margin-bottom: 1px;
+    transform: rotate(-45deg);
+}
+#section1 .offer .offers{
+    width: 100%;
+    height: 88%;
+    display: flex;
+    position: relative;
+}
+#section1 .offer .offers .postContainer{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+    overflow: hidden;
+}
+#section1 .offer .offers .postContainer .post{
+    font-size: 15px;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    margin-right: 35px;
+    box-sizing: border-box;
+    transform:translateX(0px);
+}
+
+#section1 .offer .offers .postContainer .post > div{
+    margin: 0;
+}
+
+#section1 .offer .offers .postContainer .post .post-img{
+    width: 100%;
+    height: 50%;
+
+}
+#section1 .offer .offers .postContainer .post .post-img img{
+    width: 100%;
+    box-sizing: border-box;
+}
+#section1 .offer .offers .postButton {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 35%;
+    z-index: 1000;
+}
+#section1 .offer .offers .postButton:hover{
+    cursor: pointer;
+}
+#section1 .offer .offers .postButton .arrowL{
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    padding-left: 30px;
+    display: none;
+}
+#section1 .offer .offers .postButton .arrowR{
+    width: 66px;
+    height: 66px;
+    overflow: hidden;
+    padding-right: 30px;
+}
+#section1 .offer .offers .postButton .arrowR > img{
+    transform:translateX(-50%);
+}
+#section1 .offer .offers .postContainer .post .post-img > div{
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    background-color: rgba(100, 80, 55, 0);
+}
+#section1 .offer .offers .postContainer .post .post-img > div > a{
+    position: absolute;
+    font-size: 17px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    padding: 20px 35px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.0);
+}
+#section1 .offer .offers .postContainer .post .title{
+    font-family: 'Playfair Display', serif;
+    transform:rotate(0.04deg);
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: -1px;
+    height: 20%;
+    
+}
+#section1 .offer .offers .postContainer .post .title span{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+#section1 .offer .offers .postContainer .post .txt{
+    display: block;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    height: 10%;
+}
+#section1 .offer .offers .postContainer .post .txt p {
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#section1 .offer .offers .postContainer .post .date{
+    font-family: 'gothamL', sans-serif;
+    font-size: 16px;
+    height: 10%;
+}
+#section1 .offer .offers .postContainer .post .name{
+    bottom: 20px;
+    padding: 5px 8px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 15px;
+    color:#fff;
+    height: 5%;
+}
+#section1 .offer .offers .postContainer .offerpost1{left: 0;}
+#section1 .offer .offers .postContainer .offerpost2{left: 390px;}
+#section1 .offer .offers .postContainer .offerpost3{left: 780px;}
+#section1 .offer .offers .postContainer .offerpost4{left: 1170px;}
+#section1 .offer .offers .postContainer .offerpost5{left: 1560px;}
+#section1 .offer .offers .postContainer .offerpost6{left: 1950px;}
+#section1 .offer .offers .postContainer .offerpost7{left: 2340px;}
+#section1 .offer .offers .postContainer .offerpost8{left: 2730px;}
+
+#section1 .offer .offers .postContainer .offerpost1 .name{
+    background-color: rgb(98, 107, 110);
+    text-align: center;
+    width: 120px;
+    left: 0;
+}
+#section1 .offer .offers .postContainer .offerpost2 .name{
+    background-color: rgb(126, 123, 119);
+    text-align: center;
+    width: 120px;
+}
+#section1 .offer .offers .postContainer .offerpost3 .name{
+    background-color: rgb(49, 179, 240);
+    text-align: center;
+    width: 260px;
+}
+#section1 .offer .offers .postContainer .offerpost4 .name{
+    background-color: rgb(12, 100, 116);
+    text-align: center;
+    width: 260px;
+}
+#section1 .offer .offers .postContainer .offerpost5 .name{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 120px;
+}
+#section1 .offer .offers .postContainer .offerpost6 .name{
+    background-color: rgb(196, 0, 0);
+    text-align: center;
+    width: 120px;
+}
+#section1 .offer .offers .postContainer .offerpost7 .name{
+    background-color: rgb(75, 75, 75);
+    text-align: center;
+    width: 120px;
+}
+#section1 .offer .offers .postContainer .offerpost8 .name{
+    background-color: rgb(19, 48, 19);
+    text-align: center;
+    width: 120px;
+}
+#section1 .offer .offers .postContainer .post .post-img > div:hover{
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    background-color: rgba(100, 80, 55, 0.5);
+}
+#section1 .offer .offers .postContainer .post .post-img > div:hover a{
+    position: absolute;
+    font-size: 17px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    padding: 20px 35px;
+    border: 1px solid rgba(255, 255, 255,0.8);
+    color: rgba(255, 255, 255,0.8);
+}
+
+
+
+
+
+
+/* ********************************세번째 슬라이드********************************************** */
+
+#section2 {
+    background: url(../img/bg_main02.jpg);
+    background-size: cover;
+    position: relative;
+}
+#section2 .slideDown{
+    z-index: 900;
+    background-color: #fff;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    position: relative;
+    position: absolute;
+    text-align: center;
+}
+#section2 .slideDown h1{
+    padding-top: 420px;
+    font-size:50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+#section2 .slideDown h1 span {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 55px;
+}
+#section2 .slideDown p{
+    padding-top: 25px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: -0.5px;
+}
+#section2 .slideDown .clubBtn{
+    padding-top: 50px;
+}
+#section2 .slideDown .clubBtn a{
+    background-color: #fff;
+    padding:18px 30px ;
+    margin-left: 30px;
+    font-size: 18px;
+    font-family: 'gothamL', sans-serif;
+    border: 1px solid #000;
+}
+
+
+/* *****************************네번째 스크롤의 슬라이드 1******************************** */
+#section3{
+    position: relative;
+    top: 0;
+}
+#section3 .slide:nth-child(1){
+    background: url(../img/bg_main01_01.jpg);
+    background-size: cover;
+}
+#section3 .slide1 .brandBox{
+    background-color: #fff;
+    width: 1180px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+#section3 .slide1 .brandBox .boxtitle{
+    font-size: 65px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    padding-top: 80px;
+}
+#section3 .slide1 .brandBox .subtitle{
+    font-size: 20px;
+    font-family: 'gothamB', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 13px;
+}
+#section3 .slide1 .brandList{
+    
+    width: 85%;
+    height: 300px;
+    background-color: aqua;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+#section3 .slide1 .brandList div{
+    background-color: blueviolet;
+    display: inline-block;
+    width: 190px;
+    height: 150px; 
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+#section3 .slide1 .brandList div a{
+  
+}
+
+
+
+
+
+
+
+
+
+#section3 .slide:nth-child(2) {
+    background: url(../img/bg_main01_02.jpg);
+    background-size: cover;
+}
+#section4 {
+    width: 100vh;
+    height: 100vh;
+    background-size: cover;
+}
+#section5 {
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'gothamL';
+    src:url('../font/gotham-light.woff') format('woff');
+    /* 이런식으로 weight를 지정해서 사용할 수도 있다!*/
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'gothamM';
+    src:url('../font/gotham-medium.woff') format('woff');
+    /* 이런식으로 weight를 지정해서 사용할 수도 있다!*/
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'HeirofLightBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+
