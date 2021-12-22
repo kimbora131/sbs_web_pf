@@ -1241,3 +1241,11 @@ height: 600px;
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 
+
+@keyframes slid-up {
+    0%{opacity: 0;}
+   40%{opacity: 0; transform: translateY(100px);}
+}
+#section0 .chkInout {animation-name:slid-up; animation-duration: 1.5s; }
+
+
