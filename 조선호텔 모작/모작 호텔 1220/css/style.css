@@ -165,12 +165,60 @@ header.on .inner .hRight .open img{
     transition: all 0.3s linear;
 }
 
-
-
-
-
-
-
+/* ****************************햄버거 버튼 누르면 나오는 메뉴*********************************** */
+header .allMenu {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    display: none;
+    
+}
+header .allMenu .xbtn{
+    position: absolute;
+    margin-top: 20px;
+    width: 1400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .allMenu .xbtn img{
+    position: absolute;
+    right: 50px;
+}
+header .allMenu .menu{
+    position: absolute;
+    margin-top: 100px;
+    width: 1400px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-transform: uppercase;
+    font-family: 'gothamM', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+}
+header .allMenu .menu .menuTitle{
+    color: rgb(170, 163, 95);
+    display: inline-block;
+}
+header .allMenu .menu .menuTitle > ul{
+    color: #fff;
+    display: block;
+    font-size: 18px;
+}
+header .allMenu .menu .menuTitle > ul > li {
+    margin: 30px 0;
+}
+header .allMenu .menu .menuTitle > ul > li > a{
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(167, 167, 167);
+    margin: 20px 0;
+}
 
 
 #fullpage .section {
@@ -286,7 +334,7 @@ header.on .inner .hRight .open img{
 #section0 .chkInout .select .reservation2 {
     width: 15%;
 }
-#section0 .chkInout .select .reservation2 .buttonS div{
+#section0 .chkInout .select .reservation2 .buttonS .arrow{
     position: absolute;
     top: 60%;
     display: inline-block;
@@ -1025,13 +1073,137 @@ height: 600px;
 #section5 .inner .brands .brandLogo18 {background: url(../img/img_brand_logo18.png) no-repeat center;}
 
 
+/* ***************************섹션5의 푸터********************************* */
 
+#section5 .footer {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+    background-color: black;
+}
+#section5 .footer .container{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    bottom: 0;
+    color: black;
+    margin: 0 auto;
+}
+#section5 .footer .container .brand{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 0;
+    text-align: center;
+}
+#section5 .footer .container .brand .brImg{
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+}
+#section5 .footer .container .brand .br1{background: url(../img/logo_josunpalace.png) no-repeat center;}
+#section5 .footer .container .brand .br2{background: url(../img/logo_wchosunseoul.png) no-repeat center;}
+#section5 .footer .container .brand .br3{background: url(../img/logo_wchosunbusan.png) no-repeat center;}
+#section5 .footer .container .brand .br4{background: url(../img/logo_grandjosun.png) no-repeat center;}
+#section5 .footer .container .brand .br5{background: url(../img/logo_grandjosun02.png) no-repeat center;}
+#section5 .footer .container .brand .br6{background: url(../img/logo_lescape.png) no-repeat center;}
+#section5 .footer .container .brand .br7{background: url(../img/logo_gravity.png) no-repeat center;}
+#section5 .footer .container .brand .br8{background: url(../img/logo_fourpoints.png) no-repeat center;}
+#section5 .footer .container .brand .br9{background: url(../img/logo_fourpoints02.png) no-repeat center;}
 
+#section5 .footer .container .ftInner{
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: 0;
+}
+#section5 .footer .container .ftInner > div {
+    display: inline-block;
+}
+#section5 .footer .container .ftInner .ftLogo {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+#section5 .footer .container .ftInner .ftLogo > a{
 
-
-
-
-
+    position: absolute;
+    height: 100%;
+    width: 300px;
+    background: url(../img/bg_logo_footer.png) no-repeat;
+    background-size: auto;
+    top: 0px;
+}
+#section5 .footer .container .ftInner .service {
+    position: absolute;
+    width: 800px;
+}
+#section5 .footer .container .ftInner .service > a {
+    display: inline-block;
+    top: 0;
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 2.3;
+}
+#section5 .footer .container .ftInner .service > a:nth-child(5){
+    color: rgb(168, 155, 79);
+}
+#section5 .footer .container .ftInner .adress {
+    margin-top: 20px;
+    width: 100%;
+    font-family: 'gothamL', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(141, 141, 141);
+    line-height: 1.6;
+}
+#section5 .footer .container .ftInner .adress > span {
+    content: '';
+    margin: 0 10px;
+}
+#section5 .footer .container .siteSns {
+    position: absolute;
+    right: 0;
+    color: #ddd;
+}
+#section5 .footer .container .siteSns .familySite{
+    font-family: 'gothamL', sans-serif;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(77, 77, 77);
+    width: 200px;
+    position: relative;
+}
+#section5 .footer .container .siteSns .familySite .familySites{
+    display: none;
+}
+#section5 .footer .container .siteSns .familySite ul{
+    border: 1px solid #fff;
+    width: 160px;
+    position: absolute; 
+    top: -550px;
+    font-size: 13px;
+    background-color: black;
+    padding: 20px;
+}
+#section5 .footer .container .siteSns .familySite ul li{
+    margin: 10px 0;
+}
+#section5 .footer .container .siteSns .familySite .arrow{
+    position: absolute;
+    display: inline-block;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-left: 70px;
+    transform: rotate(45deg);
+}
 
 
 
