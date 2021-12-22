@@ -2,6 +2,25 @@
 
 $(function() {
 
+    //햄버거 누르면 메뉴 나오는 이벤트
+    let openMenu = 'off'
+    $('.open').on('click', function(){
+        if( openMenu == 'off') {
+            $('header .allMenu').css({ 'display' : 'block' })
+            $('header').css({ 'background' : '#fff' })
+            $('header a').css({ 'color' : '#000' })
+            $('.open img').css({'transform':'translateX(-50%)'},{'transition':'all 0.3s linear'})
+
+            openMenu = 'on'
+        } else {
+            $('header .allMenu').css({ 'display' : 'none' })
+            $('header').css({ 'background' : 'rgba(0,0,0,0)' })
+            $('header a').css({ 'color' : '#fff' })
+            $('.open img').css({'transform':'translateX(0%)'},{'transition':'all 0.3s linear'})
+            openMenu = 'off'
+        }
+    })
+
     // ko > en 클릭 이벤트
     $('a.ko').on('click', function() {
         $('a.ko').toggleClass('on')
@@ -40,11 +59,27 @@ $(function() {
     })
 
     
-
-
-
-//* 섹션3 슬라이드 다운************************************
-
-   
+    // 두번째 포스트 슬라이드 버튼 누르면 움직이는거
+    let count = 0;
+    $('.arrowR').on('click', function(){
+        count++
+        if((count % 3) <= 2){
+            $('.postInner').css({'left':`-${(count%3)*1155}px`})
+        }
+        if ((count%2) == 0) {
+            $('.arrowR').css({'display':'none'})
+            $('.arrowL').css({'display':'block'})
+        }
+    });
+    $('.arrowL').on('click', function(){
+        count++
+        if((count % 3) <= 2){
+            $('.postInner').css({'left':`-${(count%3)*1155}px`})
+        }
+        if ((count%2) == 0) {
+            $('.arrowL').css({'display':'none'})
+            $('.arrowR').css({'display':'block'})
+        }
+    });
 
     })

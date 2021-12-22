@@ -157,7 +157,7 @@ header .reList > a {color: #fff;}
 header.on {background-color: #fff;}
 header.on a { color: black;}
 header.on .reList a {color: black;}
-header.on .reList > a {color: #000;}
+header.on .reList > a {color: black;}
 header.on .inner .hLeft .menu .reList {border: 1px solid #000;}
 header.on .inner .hLeft .menu .reList ul{border: 1px solid #000;}
 header.on .inner .hRight .open img{
@@ -216,7 +216,7 @@ header .allMenu .menu .menuTitle > ul > li > a{
     display: block;
     font-size: 15px;
     font-weight: 300;
-    color: rgb(167, 167, 167);
+    color: rgb(167, 167, 167) !important;
     margin: 20px 0;
 }
 
@@ -386,13 +386,13 @@ header .allMenu .menu .menuTitle > ul > li > a{
 
 
 
-/* **************************** #section1 두번째 슬라이드 ****************************** */
+/* **************************** #section1 두번째 스크롤 ****************************** */
 
 #section1 {
     background-color: #fff;
 } 
 #section1 .offer{
-    /* background-color: bisque; */
+    background-color: bisque;
     width: 1400px;
     height: 550px;
     margin: 0 auto;
@@ -421,73 +421,82 @@ header .allMenu .menu .menuTitle > ul > li > a{
 #section1 .offer .offers{
     width: 100%;
     height: 88%;
-    display: flex;
-    position: relative;
-}
-#section1 .offer .offers .postContainer{
-    width: 80%;
-    height: 100%;
-    position: relative;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0;
-    overflow: hidden;
-}
-#section1 .offer .offers .postContainer .post{
-    font-size: 15px;
-    position: absolute;
-    width: 30%;
-    height: 100%;
-    margin-right: 35px;
-    box-sizing: border-box;
-    transform:translateX(0px);
-}
-
-#section1 .offer .offers .postContainer .post > div{
-    margin: 0;
-}
-
-#section1 .offer .offers .postContainer .post .post-img{
-    width: 100%;
-    height: 50%;
-
-}
-#section1 .offer .offers .postContainer .post .post-img img{
-    width: 100%;
-    box-sizing: border-box;
 }
 #section1 .offer .offers .postButton {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    top: 35%;
+    position: relative;
     z-index: 1000;
 }
 #section1 .offer .offers .postButton:hover{
     cursor: pointer;
 }
 #section1 .offer .offers .postButton .arrowL{
+    position: absolute;
+    left: 0;
+    top: 40%;
     width: 66px;
     height: 66px;
     overflow: hidden;
     padding-left: 30px;
+    padding-top: 180px;
     display: none;
 }
 #section1 .offer .offers .postButton .arrowR{
+    position: absolute;
+    right: 0;
+    top: 40%;
     width: 66px;
     height: 66px;
     overflow: hidden;
     padding-right: 30px;
+    padding-top: 180px;
 }
+
+
 #section1 .offer .offers .postButton .arrowR > img{
     transform:translateX(-50%);
 }
+#section1 .offer .offers .postContainer{
+    width: 1155px;
+    height: 100%;
+    font-size: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#section1 .offer .offers .postContainer .postInner {
+    width: 200vw;
+    height: 100%;
+    /* background-color: chartreuse; */
+    position: absolute;
+}
+#section1 .offer .offers .postContainer .post{
+    font-size: 15px;
+    width: 350px;
+    height: 100%;
+    margin-right: 35px;
+    display: inline-block;
+    /* box-sizing: border-box; */
+}
+
+/* #section1 .offer .offers .postContainer .post > div{
+    margin: 0;
+} */
+
+#section1 .offer .offers .postContainer .post .post-img{
+    width: 100%;
+    height: 50%;
+    position: relative;
+
+}
+#section1 .offer .offers .postContainer .post .post-img img{
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #section1 .offer .offers .postContainer .post .post-img > div{
     position: absolute;
     width: 100%;
-    height: 48%;
+    height: 100%;
     background-color: rgba(100, 80, 55, 0);
 }
 #section1 .offer .offers .postContainer .post .post-img > div > a{
@@ -501,14 +510,29 @@ header .allMenu .menu .menuTitle > ul > li > a{
     border: 1px solid rgba(255, 255, 255, 0);
     color: rgba(255, 255, 255, 0.0);
 }
+#section1 .offer .offers .postContainer .post .post-img:hover > div{
+    background-color: rgba(100, 80, 55, 0.5);
+}
+#section1 .offer .offers .postContainer .post .post-img > div:hover a{
+    position: absolute;
+    font-size: 17px;
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
+    padding: 18px 40px;
+    border: 0.7px solid rgba(255, 255, 255,1);
+    color: rgba(255, 255, 255,0.8);
+}
+
+
 #section1 .offer .offers .postContainer .post .title{
     font-family: 'Playfair Display', serif;
     transform:rotate(0.04deg);
     font-weight: 900;
     font-size: 25px;
     letter-spacing: -1px;
-    height: 20%;
-    
+    height: 90px;
+    margin-top: 10px;
 }
 #section1 .offer .offers .postContainer .post .title span{
     font-family: 'Nanum Gothic', sans-serif;
@@ -540,14 +564,14 @@ header .allMenu .menu .menuTitle > ul > li > a{
     color:#fff;
     height: 5%;
 }
-#section1 .offer .offers .postContainer .offerpost1{left: 0;}
+/* #section1 .offer .offers .postContainer .offerpost1{left: 0;}
 #section1 .offer .offers .postContainer .offerpost2{left: 390px;}
 #section1 .offer .offers .postContainer .offerpost3{left: 780px;}
 #section1 .offer .offers .postContainer .offerpost4{left: 1170px;}
 #section1 .offer .offers .postContainer .offerpost5{left: 1560px;}
 #section1 .offer .offers .postContainer .offerpost6{left: 1950px;}
 #section1 .offer .offers .postContainer .offerpost7{left: 2340px;}
-#section1 .offer .offers .postContainer .offerpost8{left: 2730px;}
+#section1 .offer .offers .postContainer .offerpost8{left: 2730px;} */
 
 #section1 .offer .offers .postContainer .offerpost1 .name{
     background-color: rgb(98, 107, 110);
@@ -573,7 +597,7 @@ header .allMenu .menu .menuTitle > ul > li > a{
 #section1 .offer .offers .postContainer .offerpost5 .name{
     background-color: rgb(0, 0, 0);
     text-align: center;
-    width: 120px;
+    width: 150px;
 }
 #section1 .offer .offers .postContainer .offerpost6 .name{
     background-color: rgb(196, 0, 0);
@@ -590,22 +614,7 @@ header .allMenu .menu .menuTitle > ul > li > a{
     text-align: center;
     width: 120px;
 }
-#section1 .offer .offers .postContainer .post .post-img > div:hover{
-    position: absolute;
-    width: 100%;
-    height: 48%;
-    background-color: rgba(100, 80, 55, 0.5);
-}
-#section1 .offer .offers .postContainer .post .post-img > div:hover a{
-    position: absolute;
-    font-size: 17px;
-    text-align: center;
-    width: 120px;
-    margin: 0 auto;
-    padding: 18px 40px;
-    border: 0.7px solid rgba(255, 255, 255,1);
-    color: rgba(255, 255, 255,0.8);
-}
+
 
 
 
