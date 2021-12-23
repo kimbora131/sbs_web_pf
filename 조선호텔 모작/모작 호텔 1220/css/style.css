@@ -140,6 +140,7 @@ header .inner .hLeft .menu .reList ul{
     background-color: #fff;
     text-align: center;
     display: none;
+    z-index: 1000;
 }
 
 header .inner .hLeft .menu .reList ul li{
@@ -256,9 +257,11 @@ header .allMenu .menu .menuTitle > ul > li > a{
     position: absolute;
     width: 1400px;
     height: 110px;
-    left: 50%;
+    margin: 0 auto;
     top: 50%;
+    left: 50%;
     transform: translateX(-50%);
+    
 }
 #section0 .chkInout .promotion {
     position: absolute;
@@ -1242,10 +1245,29 @@ height: 600px;
 
 
 
+
+
 @keyframes slid-up {
     0%{opacity: 0;}
    40%{opacity: 0; transform: translateY(100px);}
 }
-#section0 .chkInout {animation-name:slid-up; animation-duration: 1.5s; }
+@keyframes fade {
+    0%{opacity: 0;}
+   70%{opacity: 0;}
+}
+
+#section0 .mainText {animation-name:fade; animation-duration: 1s;}
+#section0 .chkInout > div {animation-name:slid-up; animation-duration: 1.5s; }
+
+
+
+
+
+
+
+
+
+
+
 
 

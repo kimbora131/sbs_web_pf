@@ -8,15 +8,14 @@ $(function() {
         if( openMenu == 'off') {
             $('header .allMenu').css({ 'display' : 'block' })
             $('header').css({ 'background' : '#fff' })
-            $('header a').css({ 'color' : '#000' })
-            $('.open img').css({'transform':'translateX(-50%)'},{'transition':'all 0.3s linear'})
-
+            
+            $('header').addClass('on')
             openMenu = 'on'
         } else {
             $('header .allMenu').css({ 'display' : 'none' })
             $('header').css({ 'background' : 'rgba(0,0,0,0)' })
-            $('header a').css({ 'color' : '#fff' })
-            $('.open img').css({'transform':'translateX(0%)'},{'transition':'all 0.3s linear'})
+            
+            $('header').removeClass('on')
             openMenu = 'off'
         }
     })
@@ -41,6 +40,7 @@ $(function() {
             reListOn = 'off'
         }
     })
+
 
 
     // 스크롤 감지
