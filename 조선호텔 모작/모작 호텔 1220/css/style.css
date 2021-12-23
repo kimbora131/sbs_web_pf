@@ -1150,7 +1150,7 @@ height: 600px;
 }
 #section5 .footer .container .ftInner .service {
     position: absolute;
-    width: 800px;
+    width: 65%;
 }
 #section5 .footer .container .ftInner .service > a {
     display: inline-block;
@@ -1179,6 +1179,7 @@ height: 600px;
 }
 #section5 .footer .container .siteSns {
     position: absolute;
+    width: 15%;
     right: 0;
     color: #ddd;
 }
