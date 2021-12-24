@@ -1,0 +1,7 @@
+header{width: 100%;height: 100px;background-color: tomato;}
+footer{width: 100%;height: 300px;background-color: rgb(255, 170, 155);bottom: 0;}
+section{background:rgb(255, 243, 202) ;}
+section.bg{
+    width: 100% !important;
+    background: url(../img/wide_bg.jpg) center center no-repeat fixed;
+}

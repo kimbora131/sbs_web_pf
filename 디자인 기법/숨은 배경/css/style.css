@@ -1,0 +1,59 @@
+.wrap {
+    width: 100%;
+    
+}
+
+
+.flex { display: flex; }
+.flex.flex-between { justify-content: space-between; }
+.flex.flex-around { justify-content: space-around; }
+
+
+/* top-banner */
+.top-banner {
+    display: block;
+    position: relative;
+    height: 80px;
+    background: url(../img/top_banner.jpg) center center;
+}
+
+
+header .util { background-color: #eee; height: 60px; line-height: 60px;}
+
+
+header .util a::after {
+    content: '';
+    display: inline-block;
+    height: 0.75em;
+    width: 1px;
+    border-right: 1px solid #cecec5;
+    margin: 0 1em;
+    vertical-align: middle;
+}
+
+
+
+header { 
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+}
+
+
+section {
+    width: 100%;
+    min-height: 400px;
+}
+
+section.info {
+    width: 100% !important;
+    min-height: 600px;
+    position: relative;
+    background:url(../img/main_bg.jpg);
+    background-size: cover;
+    background-position: center center ;
+    /* 스크롤시 background-attachment 는 배경 이미지를 스크롤할지 고정할지의 여부를 지정하는 속성 */
+    /* scroll(기본설정), fixed */
+    background-attachment: fixed;
+    color: #000;
+}

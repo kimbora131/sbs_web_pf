@@ -1,0 +1,42 @@
+/* slick - 네비게이션 화살표 */
+.slick-prev::before,
+.slick-next::before {
+    color: black;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1024px) {
+    .slide-container { width: 800px; }
+}
+
+
+@media screen and (max-width: 800px) {
+    .slide-container { width: 500px; height: 300px; }
+    .slide { height: 300px; }
+}
+
+
+@media screen and (max-width: 480px) {
+    .slide-container { width: 300px; }
+}
+
+
+.slide-container {
+    width: 1200px;
+    height: 480px;
+    margin: 150px auto;
+}
+
+
+.slide {
+    width: auto;
+    height: 480px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.slide img { 
+    width: 100%;
+    height: 100%;
+}
