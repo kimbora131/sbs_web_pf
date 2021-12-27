@@ -1,2 +1,0 @@
-# xmascard
-과제
