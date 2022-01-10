@@ -1,0 +1,24 @@
+@keyframes play180 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -36000px 0px;
+  }
+}
+.svg {
+  animation-duration: 3000ms;
+  animation-timing-function: steps(180);
+
+  animation-fill-mode: forwards;
+
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+.svg.animate__animated {
+
+  animation-name: play180;
+
+}
