@@ -1,0 +1,106 @@
+body,header,section,footer,div,p,a,h1,h2,h3,h4,h5,h6,ul,ol,li{margin: 0;padding: 0;}
+a{text-decoration: none; color: inherit;}
+
+#sideLogin{
+    background: #242838;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+}
+.loginToggle {
+    background-image: url(../img/sideloginToggle_bg.png);
+    width: 66px;
+    height: 178px;
+    position: absolute;
+    top: 60px;
+    right: -66px;
+}
+.mainLogin{
+    text-align: center;
+    width: 200px;
+    height: 79px;
+    background: #00e4ff;
+    font-family: 'NEXON2 GB', serif;
+    color: #fff;
+    font-size: 22px;
+    text-shadow: 0px 0px 5px #888;
+    border-radius: 0px 60px 60px 60px;
+
+    margin: 100px auto 0;
+    padding-top: 20px;
+}
+
+.mainLogin span {font-style: italic;font-size: 27px;}
+
+.pcroomLogin{
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    background: #ddd;
+    font-family: 'NEXON2 GB', serif;
+    font-size: 20px;
+    border-radius: 0px 40px 40px 40px;
+
+    margin: 20px auto;
+    position: relative;
+}
+.pcroomLogin > a{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.qrLogin{
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    background: #ddd;
+    font-family: 'NEXON2 GB', serif;
+    font-size: 20px;
+    border-radius: 0px 40px 40px 40px;
+
+    margin: 20px auto 50px;
+    position: relative;
+}
+.qrLogin > a{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.etc {
+    font-family: 'NEXON2 GL', serif;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.etc > a {
+    margin: 7px auto;
+}
+
+
+
+
+@font-face {
+    font-family: 'NEXON2 GL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON2 GM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON2 GB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
