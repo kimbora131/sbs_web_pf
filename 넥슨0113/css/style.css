@@ -1,0 +1,735 @@
+body,header,section,footer,div,p,a,h1,h2,h3,h4,h5,h6,ul,ol,li,span{margin: 0;padding: 0;}
+a{text-decoration: none; color: inherit;}
+
+body{
+    background-color: #f8f8f8;
+}
+
+/* *******************************************사이드 로그인 바********************************************* */
+#sideLogin{
+    background: #242838;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: -300px;
+    transition: 1s;
+    z-index: 30;
+}
+.loginToggleS{
+    background-image: url(../img/sideloginToggle_bg.png);
+    width: 66px;
+    height: 178px;
+    position: absolute;
+    top: 60px;
+    right: -66px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.loginToggleS > p{
+    font-family: 'NEXON2 GB', serif;
+    font-size: 30px;
+    color: #fff;
+    transform: rotateZ(-90deg);
+    text-shadow: 0px 0px 5px #888;
+    position: absolute;
+    left: -8px;
+    top: 60px;
+}
+.loginToggleS > img{
+    position: absolute;
+    top: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    width: 25px;
+    height: 25px;
+}
+.loginToggleS:hover{
+    opacity: 1 !important;
+}
+.mainLoginS{
+    text-align: center;
+    width: 200px;
+    height: 79px;
+    background: #00e4ff;
+    font-family: 'NEXON2 GB', serif;
+    color: #fff;
+    font-size: 22px;
+    text-shadow: 0px 0px 5px #888;
+    border-radius: 0px 60px 60px 60px;
+
+    margin: 100px auto 0;
+    position: relative;
+}
+
+.mainLoginS span {font-style: italic;font-size: 27px;}
+.mainLoginS > a{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.pcroomLoginS{
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    background: #ddd;
+    font-family: 'NEXON2 GB', serif;
+    font-size: 20px;
+    border-radius: 0px 40px 40px 40px;
+
+    margin: 20px auto;
+    position: relative;
+}
+.pcroomLoginS > a{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.qrLoginS{
+    text-align: center;
+    width: 160px;
+    height: 50px;
+    background: #ddd;
+    font-family: 'NEXON2 GB', serif;
+    font-size: 20px;
+    border-radius: 0px 40px 40px 40px;
+
+    margin: 20px auto 40px;
+    position: relative;
+}
+.qrLoginS > a{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tpaS{
+    height: 46px;
+    width: 100%;
+    margin: 30px 0 20px;
+    text-align: center;
+}
+.tpaS > a{
+    margin: 0 5px;
+}
+
+.etcS {
+    font-family: 'NEXON2 GL', serif;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.etcS > a {
+    margin: 8px auto;
+}
+
+
+
+/* *******************************************헤더********************************************* */
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    z-index: 20;
+}
+.header > a{
+    font-family: 'NEXON2 GB', serif;
+    font-size: 20px;
+    letter-spacing: -1px;
+    padding: 3px;
+    border: 3px solid #000;
+    border-radius: 30px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 슬라이드 베너 */
+.slide{
+    width: 1920px;
+    height: 560px;
+    background: #000;
+    font-size: 0;
+    margin: 0 auto;
+    border-radius: 0 0 60px 60px;
+    overflow: hidden;
+    position: relative;
+}
+.slide > ul{display: inline-block;}
+
+.slideArea{
+    width: 1665px;
+    height: 100%;
+    overflow: hidden;
+}
+.slideArea > li{width: 100%;height: 100%;}
+.slideImg1{
+    background-image: url(../img/slide_1.png) ;
+}
+.slideImg2{
+    background-image: url(../img/slide_2.png);
+}
+.slideImg3{
+    background-image: url(../img/slide_3.png);
+}
+.slideImg4{
+    background-image: url(../img/slide_4.png);
+}
+.slideImg5{
+    background-image: url(../img/slide_5.png);
+}
+.slideImg6{
+    background-image: url(../img/slide_6.png);
+}
+/* 슬라이드 타이틀 */
+.slideList{
+    width: 255px;
+    height: 100%;
+    overflow: hidden;
+}
+.slideList > li:nth-child(3){border-left: 3px solid #00e4ff;}
+.slideList > li{width: 100%;height: 112px;background-image: url(../img/slide_list.png);}
+
+.sldTitle > p {
+    font-family: 'NEXON2 GB', serif;
+    color:#fff;
+    font-size: 20px;
+    line-height: 1.6;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+.sldTitle > p > span{
+    font-family: 'NEXON2 GM', serif;
+    font-size: 16px;
+    color:rgba(255,255,255,0.5);
+}
+
+/* 이전다음버튼 */
+.sldBtn{
+    position: absolute;
+    width: 35px;
+    height: 80%;
+    margin: 0 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.prev{
+    width: 35px;
+    height: 35px;
+    background: url(../img/arrow.png);
+    transform: rotateZ(-90deg);
+}
+.next{
+    width: 35px;
+    height: 35px;
+    background: url(../img/arrow.png);
+    transform: rotateZ(90deg);
+}
+
+/* 네비게이션 */
+.dots-box{
+    position: absolute;
+    width: 35px;
+    height: 560px;
+    margin: 0 15px;
+    top: 0;
+    right: 255px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dot{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.3;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: 10px auto;
+}
+.dot.active{background-color: rgb(0, 255, 255);opacity: 1;}
+
+
+/* *******************************************섹션 1 로그인+추천게임********************************************* */
+.section1 { width: 1280px; height: 500px; margin: 0 auto; display: flex;justify-content: space-between;}
+.section1 > div {margin: 40px 0;}
+/* 추천게임 */
+.recommend {
+    width: 630px;
+    height: 100%;
+}
+.recommend > p {
+    font-family: 'NEXON2 GB', serif;
+    font-size: 30px;
+    color: #000;
+    margin: 10px 0;
+    text-align: left;
+}
+.recommendGame {
+    width: 153px;
+    height: 342px;
+    text-align-last: left;
+    display: inline-block;
+    background:#fff;
+    position: relative;
+}
+.recommendGame > img {
+    width: 153px;
+    height: 192px;
+    margin-bottom: 10px;
+}
+.recommendGame .my{
+    font-family: 'NEXON2 GM', serif;
+    background-color: rgb(29, 101, 255);
+    color: #fff;
+    font-size: 10px;
+    padding: 3px 6px;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+.recommendGame p{
+    font-family: 'NEXON2 GB', serif;
+    font-size: 20px;
+    margin: 10px 0 0 15px;
+}
+.recommendGame p:last-child{
+    font-size: 11px;
+    font-family: 'NEXON2 GL', serif;
+    position: absolute;
+    bottom: 10px;
+    color: #aaa;
+}
+
+
+/* 로그인박스 */
+.login {
+    width: 630px;
+    height: 410px;
+}
+.login > p{
+    font-family: 'NEXON2 GB', serif;
+    font-size: 30px;
+    color: #000;
+    margin: 10px 0;
+    text-align: left;
+}
+.loginBox{
+    width: 630px;
+    height: 342px;
+    text-align-last: left;
+    display: inline-block;
+    background:#fff;
+}
+.nexonID{
+    width: 422px;
+    height: 67px;
+    margin: 35px auto 0;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'NEXON1 GB';
+}
+.nexonID > span {
+    font-style: italic;
+    margin-right: 10px;
+}
+.pcqr{
+    width: 422px;
+    height: 50px;
+    margin: 10px auto 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.pcroomLogin{
+    font-size: 18px;
+    font-family: 'NEXON1 GB';
+    width: 200px;
+    height: 100%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qrLogin{
+    width: 200px;
+    height: 100%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'NEXON1 GB';
+}
+.tpa{
+    width: 422px;
+    height: 55px;
+    background-color: rgb(249,249,249);
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #aaa;
+    font-size: 13px;
+}
+.tpa > p{
+    margin: 0 20px 0 10px;
+}
+.tpa > a{
+    margin-top: 5px;
+    margin-right: 10px;
+    transform: scale(80%);
+}
+.etc {
+    width: 422px;
+    height: 10px;
+    font-size: 14px;
+    color: #222;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.etc>a {
+    margin: 0 15px;
+}
+
+/* *******************************************섹션 2 신규게임********************************************* */
+
+.section2 { 
+    width: 100vw; height: 900px;
+    font-size: 0;
+    position: relative;
+    margin-bottom: 60px;
+}
+.section2 > p {
+    font-family: 'NEXON2 GB', serif;
+    font-size: 30px;
+    color: #000;
+    margin: 10px 0;
+    text-align: center;
+}
+.newGameSection{
+    position: absolute;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 806px;
+}
+.newGame{
+    width: 1280px;
+    height: 806px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.N-G{
+    width: 630px;
+    height: 806px;
+    position: relative;
+    overflow: hidden;
+}
+.newGame1{
+    background-image: url(../img/newgameA-bg.png);
+}
+.newGameImg{
+    position: relative;
+}
+.ng1Logo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.ng1Cha1{
+    position: absolute;
+    transform: scale(65%);
+    width: 1112px;
+    height: 1065px;
+    right: -220px;
+    top: -50px;
+}
+.ng1Cha2{
+    position: absolute;
+    transform: scale(50%);
+    width: 538px;
+    height: 957px;
+    left: -100px;
+    top: -220px;
+}
+
+.goTo {
+    position: relative;
+    position: absolute;
+    width: 350px;
+    height: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+/* 자세히보기 버튼들 */
+.newGameTag{
+    width: 100%;
+    color: #fff;
+    font-family: 'NEXON2 GM', serif;
+}
+.newGameTag >div:first-child{
+    background-color: rgb(0, 247, 255);
+    color: blue;
+}
+.newGameTag >div {
+    font-size: 12px;
+    background-color: rgb(0, 119, 255);
+    display: inline-block;
+    padding: 3px 6px;
+    border-radius: 30px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
+.goToHomepage {
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    border: 2px solid #888;
+    border-radius: 50px;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    font-family: 'NEXON1 GB', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:0.5s;
+}
+.goToHomepage:hover{
+    border: 2px solid rgb(0, 238, 255);
+    color:rgb(0, 238, 255);
+    text-shadow: 0 0 5px rgb(173, 216, 255);
+    cursor: pointer;
+}
+.madeArrow {
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotateZ(-45deg);
+    transition:0.5s;
+}
+.goToHomepage:hover .madeArrow{
+    border-bottom: 3px solid rgb(0, 238, 255);
+    border-right: 3px solid rgb(0, 238, 255);
+}
+.newGame2{
+    background-image: url(../img/newgameA-bg.png);
+}
+
+/* 신규게임-자세히보기 누른 후 나오는 팝업창*/
+.newGameMore{
+    position: relative;
+    position: absolute;
+    width: 1920px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ng1More{
+    display: none;
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/newgameA-more-bg.png);
+    box-shadow: 0px 0px 0px 2000px rgba(0,0,0,0.7);
+}
+.ng1_closeBtn{
+    z-index: 255;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.ng1More >img:nth-child(2) {
+    position: absolute;
+    transform: scale(80%);
+    width: 1112px;
+    height: 1065px;
+    right: -80px;
+    bottom: -107px;
+}
+.ng1More >img:nth-child(3) {
+    position: absolute;
+    transform: scale(90%);
+    width: 538px;
+    height: 957px;
+    left: 20px;
+}
+.ng1More >img:nth-child(4) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(100%);
+    top: 10%;
+}
+.ng1Homepage{
+    position: absolute;
+    width: 460px;
+    height: 95px;
+    background: url(../img/ngA-more-img2.png);
+    font-size: 38px;
+    line-height: 2.3;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
+    text-align: center;
+    font-family: 'HeirofLight Bold';
+    box-shadow: 0 0 5px #000;
+    text-shadow: 0 0 3px #ddd;
+}
+
+/* *******************************************섹션 3 전체게임********************************************* */
+
+.section3{
+    width: 1280px;
+    height: 1400px;
+    margin-bottom: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+.section3 > p {
+position: absolute;
+margin: 10px 0;
+}
+.section3 > p:first-child {
+    font-family: 'NEXON2 GB', serif;
+    font-size: 30px;
+    color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section3 > p:nth-child(2){
+    right: 0;
+    font-family: 'NEXON2 GM';
+    color: #888;
+}
+.allGames {
+    position: absolute;
+    width: 100%;
+    height: 1320px;
+    top: 60px;
+}
+.rpg-Game{
+    width: 100%;
+    height: 360px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'NEXON1 GL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON1 GM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON1 GB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON2 GL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON2 GM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON2 GB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HeirofLight Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HeirofLight Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
