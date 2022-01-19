@@ -22,20 +22,70 @@ $(function(){
         let dot = "<a href='#' class='dot'></a>"
         $(".dots-box").append(dot)
     }
-    $(".dot:first-child").addClass('active')
+
+    // 첫번째 이미지에 액티브 클레스 넣고 시작하기
+    $(function(){$('.slideImg').eq(nowIdx).addClass('active')})
+    //같은 위치의 dot에 엑티브 넣기
+    $(function(){
+        if('.slideImg1.active'){
+            $('.dot').eq(0).addClass('active')
+        } else if ('.slideImg2.active'){
+            $('.dot').siblings().removeClass('active')
+            $('.dot').eq(1).addClass('active')
+        }
+    })
+    
 
     
-    // 5초마다 첫번째타이틀이 맨 뒤로 이동하는 것을 반복. 그러나 슬라이드에 호버하면 멈춤
-    const intervalTime = 2000
-    let slide = $('.slide')
+    //슬라이드 타이틀 위치 조정 (맨 뒤의 요소와 맨 뒤에서 두번째 요소가 언제나 타이틀 슬라이드 순서상 1, 2번 위치에 와있도록)
+    let sldTitlelength = sldTitle.length
     let slideList = $('.slideList')
+    $(function(){
+        $('.sldTitle').last().prependTo(slideList)
+        $('.sldTitle').eq(sldTitlelength-1).prependTo(slideList)
+    })
+    
 
-    function autoTitleSlide(){
-        autoTitle = setInterval(function(){
-            $('.sldTitle:first-child').appendTo(slideList)
-        }, intervalTime)}
+    
+    // 슬라이드: 5초마다 첫번째타이틀이 맨 뒤로 이동하는 것을 반복. 그러나 슬라이드에 호버하면 멈춤
+    const intervalTime = 5000
+    let slideArea = $('.slideArea')
+    let nowIdx = 0
+    
+    //5초마다 첫번째 슬라이드 이미지가 맨 뒤로 이동하게 끔.
+    function move(){
+        $('.slideImg').eq(nowIdx).appendTo(slideArea)
+        $('.slideImg').eq(nowIdx).addClass('active')
+        $('.slideImg').eq(nowIdx-1).removeClass('active')
+        $('.sldTitle').eq(nowIdx).appendTo(slideList)
+    }
+    //그 움직임을 함수  startSlide() 라고 정해줌. 그리고 그 움직임의 이름은 slideMove임.
+    let slideMove
+    // 슬라이드 시작하는 함수
+    function startSlide(){
+        slideMove = setInterval(move, intervalTime)
+    }
+    //슬라이드 멈추는 함수
+    function stopSlide(){
+        clearInterval(slideMove);
+    }
+    //마우스 호버,리브 했을때 멈추고 시작하는걸 설정해줌.
+        $('.slide').hover(stopSlide,startSlide)
+    //창 켜졌을때 바로 시작할 수 있도록 하게 해줌.
+    startSlide()
 
-        autoTitleSlide()
+    
+    
+    
+
+
+
+
+
+
+
+
+
 
 
 
