@@ -215,11 +215,13 @@ body{
     overflow: hidden;
 }
 .slideList > li:nth-child(3){border-left: 3px solid #00e4ff;}
+.slideList > li:nth-child(3) > p> span{color:rgba(255,255,255,0.7);}
+.slideList > li:nth-child(3) > p{color:rgba(255,255,255,1);}
 .slideList > li{width: 100%;height: 112px;background-image: url(../img/slide_list.png);}
 
 .sldTitle > p {
     font-family: 'NEXON2 GB', serif;
-    color:#fff;
+    color:rgba(255,255,255,0.5);
     font-size: 20px;
     line-height: 1.6;
     padding-left: 15px;
@@ -228,7 +230,7 @@ body{
 .sldTitle > p > span{
     font-family: 'NEXON2 GM', serif;
     font-size: 16px;
-    color:rgba(255,255,255,0.5);
+    color:rgba(255,255,255,0.2);
 }
 
 /* 이전다음버튼 */
@@ -593,6 +595,9 @@ body{
     height: 1065px;
     right: -80px;
     bottom: -107px;
+    animation: fadeInRight 1s;
+    animation-fill-mode: both;
+    
 }
 .ng1More >img:nth-child(3) {
     position: absolute;
@@ -600,12 +605,18 @@ body{
     width: 538px;
     height: 957px;
     left: 20px;
+    animation: fadeInLeft 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
 }
 .ng1More >img:nth-child(4) {
     position: absolute;
     left: 50%;
     transform: translateX(-50%) scale(100%);
     top: 10%;
+    animation: fadeInTop 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
 }
 .ng1Homepage{
     position: absolute;
@@ -997,6 +1008,32 @@ footer{
     top: -248px;
 }
 
+/* 애니메이션 */
+
+@keyframes fadeInLeft {
+    0% {opacity: 0; left: -150px;}
+    100% {opacity: 1; left: 20px;}
+}
+@keyframes fadeInRight {
+    0% {opacity: 0; right: -500px;}
+    100% {opacity: 1; right: -80px;}
+}
+@keyframes fadeInTop {
+    0% {opacity: 0; top: 0;}
+    100% {opacity: 1; top: 10%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* *********************************반응형 1920px************************************ */
@@ -1016,6 +1053,36 @@ footer{
     .slide > ul{position: absolute;}
     .slide > .slideArea{left: 0;}
     .slide > .slideList{right: 0;}
+
+    .newGameMore {
+        width: 100%;
+    }
+    .ng1More {
+        background-size: cover;
+    }
+    .ng1More > img:nth-child(2){
+        transform: scale(75%);
+        bottom: -133px;
+    }
+    .ng1More > img:nth-child(3){
+        transform: scale(80%);
+        top:-50px;
+    }
+    .ng1More > img:nth-child(4){
+        left: 50%;
+        transform: translateX(-50%) scale(80%);
+        top:-150px;
+    }
+    .ng1Homepage{
+        width: 320px;
+        height: 80px;
+        font-size: 27px;
+        line-height: 2.8;
+    }
+    .ng1_closeBtn{
+        width: 50px;
+        height: 50px;
+    }
   }
 
 
@@ -1049,6 +1116,7 @@ footer{
         transform: translateX(-50%);
         width: 100%;
         height: 80px;
+        background-color: #000;
     }
     .slideList > li:nth-child(3){
         border-left: 0px solid #00e4ff;
