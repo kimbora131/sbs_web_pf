@@ -893,7 +893,7 @@ margin: 10px 0;
     margin-right: 7px;
 }
 
-/* *******************************************섹션 4 모바일 게임********************************************* */
+/* *******************************************푸터********************************************* */
 
 footer{
     background-color: #252525;
@@ -1172,6 +1172,67 @@ footer{
         transform: rotateZ(0deg);
     }
     .dots-box{display: none;}
+
+
+
+
+    /* *********************섹션1 추천게임+로그인*********************** */
+
+    .section1 {width: 90%;}
+    .recommend {width: 60%; font-size: 0; padding-right: 10px;}
+    .recommendGame{width: 25%; overflow: hidden; margin: 0 0;}
+    .recommendGame > img {width: 100%; object-fit: cover;}
+    .login {width: 40%;}
+    .loginBox{width: 100%;}
+    .nexonID, .pcqr { width: 80%;}
+    .pcqr > a {width: 50%; font-size: 16px;}
+    .pcqr > a:last-child {margin-left: 10px;}
+    .tpa{width: 80%;}
+    .tpa > p {display: none;}
+    .tpa > a {margin: 0 2px;}
+    .etc {width: 80%; letter-spacing: -1px; font-size: 12px;}
+    .etc > a {margin: 0 2px;}
+
+    .section2 {width: 100%;}
+    .newGame { width: 100%;}
+    .newGame1{margin-right: 10px;}
+
+    .section3 {width: 100%; height: 1200px;}
+    .allGames{width: 100%;}
+    .allGames > div { width: 100%;}
+    .rpg-Game {height: 300px;}
+    .rpg-gameLogo{top: -30px;}
+    .rpg-gameList{ right: -100px; transform: scale(70%); top: -30px;}
+    .rpg-title {transform: scale(80%); top: -30px; left: 20px;}
+    .rpg-gameText {width: 80%;}
+    .allGame-btn{width: 80%;}
+    
+    .section4{width: 100%;}
+    .mobileGame{
+        margin: 0 25px;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-template-rows: 120px 120px 120px 120px;
+        column-gap: 10px;
+        row-gap: 30px;
+    }
+    .mobileGame-box{width: 100%;}
+    .mobileGame-box > img {width: 120px; height: 120px;}
+    .mGameName {font-size: 14px; padding-right: 10px; width: 80%; height: 40px;}
+    .mGameEvent{margin-top: 10px; font-size: 10px;}
+    .mGameCategory{font-size: 10px;}
+    .mGameDown > img {transform: scale(80%);}
+
+
+
+
+    /* .section1 { width:100%; height: 850px; display: block; margin-top: 50px;}
+    .section1 > div {width: 80%; height: 50%; margin: 0 auto;}
+    .recommend > p, .login > p {text-align: center;}
+    .recommend {text-align: center;}
+    .login {text-align: center;} */
+
+
+    
   }
 
 
