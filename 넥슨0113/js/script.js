@@ -15,12 +15,19 @@ $(function(){
         };
     })
     
+
+
+
+
     //네비게이션
     let sldTitle = $('.sldTitle')
     let sldTitleCount = sldTitle.length
     for(let i = 0 ; i < sldTitleCount ; i++){
         let dot = "<a href='#' class='dot'></a>"
         $(".dots-box").append(dot)
+
+
+
     }
 
     // 첫번째 이미지에 액티브 클레스 넣고 시작하기
@@ -37,16 +44,28 @@ $(function(){
     })
     
     // 슬라이드: 5초마다 첫번째타이틀이 맨 뒤로 이동하는 것을 반복. 그러나 슬라이드에 호버하면 멈춤
-    const intervalTime = 5000
+    const intervalTime = 2000
     let slideArea = $('.slideArea')
     let nowIdx = 0
+    let index = 1
     //5초마다 첫번째 슬라이드 이미지가 맨 뒤로 이동하게 끔.
     function move(){
         $('.slideImg').eq(nowIdx).appendTo(slideArea)
         $('.slideImg').eq(nowIdx).addClass('active')
         $('.slideImg').eq(nowIdx-1).removeClass('active')
         $('.sldTitle').eq(nowIdx).appendTo(slideList)
-        }
+
+        $(".dots-box .dot").removeClass('active')
+        $(".dots-box .dot").eq(index++).addClass('active')
+        let max = $(".dots-box .dot").length;
+        if( index == max )
+            index = 0
+    }
+
+    $(".sldBtn .prev").on('click', function(){
+        $('.slideImg').eq(-1).prependTo(slideArea)
+    })
+    
     
     //그 움직임을 함수  startSlide() 라고 정해줌. 그리고 그 움직임의 이름은 slideMove임.
     let slideMove
