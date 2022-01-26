@@ -185,10 +185,10 @@ body{
 }
 .slideImg{
     opacity: 0;
+    transition: 2s;
 }
 .slideImg:first-child{
     opacity: 1;
-    transition: 2s;
 }
 .slideImg1{
     background-image: url(../img/slide_1.png) ;
@@ -245,7 +245,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    z-index: 800;
 }
 .prev{
     width: 35px;
@@ -1197,7 +1197,7 @@ footer{
     .newGame { width: 100%;}
     .newGame1{margin-right: 10px;}
 
-    .section3 {width: 100%; height: 1200px;}
+    .section3 {width: 100%; height: 1150px;}
     .allGames{width: 100%;}
     .allGames > div { width: 100%;}
     .rpg-Game {height: 300px;}
